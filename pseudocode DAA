@@ -1,0 +1,13 @@
+FUNCTION perbandingan(a, b)
+    IF a > b THEN
+        PRINT "a lebih besar dari b"
+    ELSE IF a < b THEN
+        PRINT "a lebih kecil dari b"
+    ELSE
+        PRINT "a dan b sama besar"
+    END IF
+END FUNCTION
+
+a1 = INPUT("number a: ")
+b1 = INPUT("number b: ")
+CALL perbandingan(a1, b1)
