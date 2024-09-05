@@ -1,0 +1,151 @@
+algoritma dan pseudocode untuk masing-masing masalah yang Anda berikan:
+1. Cari nilai KPK dari 3 dan 4
+Algoritma:
+1. Faktorkan kedua bilangan ke dalam faktor prima.
+2. Ambil faktor prima yang muncul dengan pangkat tertinggi.
+3. Kalikan semua faktor prima dengan pangkat tertinggi mereka untuk mendapatkan KPK.
+
+Pseudocode:
+```plaintext
+function cariKPK(a, b):
+    # Faktorisasi a dan b
+    faktor_a = faktorisasi(a)
+    faktor_b = faktorisasi(b)
+
+    # Ambil faktor-faktor prima dari a dan b
+    faktor_utama = gabungkanFaktor(faktor_a, faktor_b)
+
+    # Hitung KPK
+    KPK = 1
+    for setiap faktor dalam faktor_utama:
+        KPK = KPK * (faktor^pangkat_tertinggi)
+
+    return KPK
+
+function faktorisasi(n):
+    # Faktor prima dari n
+    faktor = []
+    i = 2
+    while i * i <= n:
+        if n % i:
+            i += 1
+        else:
+            n //= i
+            faktor.append(i)
+    if n > 1:
+        faktor.append(n)
+    return faktor
+
+function gabungkanFaktor(faktor_a, faktor_b):
+    # Gabungkan faktor-faktor dari a dan b
+    # (penyesuaian sesuai kebutuhan untuk mendapatkan pangkat tertinggi)
+    # Implementasi ini bergantung pada faktor-faktor prima
+    return faktor_utama
+```
+
+2. Fungsi untuk menukar posisi dua variabel x dan y
+
+Kasus: Manggis di piring 1, Pisang di piring 2, dan Piring 3 kosong.
+
+Algoritma:
+1. Simpan isi piring 1 ke piring 3.
+2. Pindahkan isi piring 2 ke piring 1.
+3. Pindahkan isi piring 3 ke piring 2.
+
+Pseudocode:
+```plaintext
+function tukarPosisi(piring1, piring2, piring3):
+    # Simpan isi piring1 ke piring3
+    piring3 = piring1
+    
+    # Pindahkan isi piring2 ke piring1
+    piring1 = piring2
+    
+    # Pindahkan isi piring3 ke piring2
+    piring2 = piring3
+
+# Inisialisasi
+piring1 = "manggis"
+piring2 = "pisang"
+piring3 = "kosong"
+
+# Panggil fungsi tukar posisi
+tukarPosisi(piring1, piring2, piring3)
+```
+
+3. Hitung luas dari segitiga dengan alas 25 dan tinggi 30
+
+Algoritma:
+1. Gunakan rumus luas segitiga: \(\text{Luas} = \frac{1}{2} \times \text{alas} \times \text{tinggi}\).
+Pseudocode:
+```plaintext
+function hitungLuasSegitiga(alas, tinggi):
+    luas = 0.5 * alas * tinggi
+    return luas
+
+# Inisialisasi
+alas = 25
+tinggi = 30
+
+# Panggil fungsi hitung luas
+luas = hitungLuasSegitiga(alas, tinggi)
+```
+
+4. Algoritma dan pseudocode luas jajar genjang
+
+Algoritma:
+1. Hitung luas jajar genjang menggunakan rumus: \(\text{Luas} = \text{panjang} \times \text{tinggi}\).
+Pseudocode:
+```plaintext
+function hitungLuasJajarGenjang(panjang, tinggi):
+    luas = panjang * tinggi
+    return luas
+
+# Inisialisasi
+panjang = 5
+tinggi = 3
+
+# Panggil fungsi hitung luas
+luas = hitungLuasJajarGenjang(panjang, tinggi)
+```
+
+5. Algoritma dan pseudocode volume tabung
+
+Algoritma:
+1. Hitung volume tabung menggunakan rumus: \(\text{Volume} = \pi \times r^2 \times t\).
+
+Pseudocode:
+```plaintext
+function hitungVolumeTabung(jari_jari, tinggi):
+    pi = 3.14159
+    volume = pi * (jari_jari^2) * tinggi
+    return volume
+
+# Inisialisasi
+jari_jari = 3
+tinggi = 5
+
+# Panggil fungsi hitung volume
+volume = hitungVolumeTabung(jari_jari, tinggi)
+```
+
+6. Algoritma dan pseudocode volume kerucut
+
+Algoritma:
+1. Hitung jari-jari dari diameter dengan membaginya dengan 2.
+2. Hitung volume kerucut menggunakan rumus: \(\text{Volume} = \frac{1}{3} \pi \times r^2 \times t\).
+Pseudocode:
+```plaintext
+function hitungVolumeKerucut(diameter, tinggi):
+    jari_jari = diameter / 2
+    pi = 3.14159
+    volume = (1 / 3) * pi * (jari_jari^2) * tinggi
+    return volume
+
+# Inisialisasi
+diameter = 5
+tinggi = 4
+
+# Panggil fungsi hitung volume
+volume = hitungVolumeKerucut(diameter, tinggi)
+```
